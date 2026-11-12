@@ -1,0 +1,239 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7f2;
+    color: #713c38;
+}
+
+/* Header */
+header {
+    background-color: #a52d36;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+nav {
+    background-color: #651c23;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffc5a8;
+}
+
+/* Hero Section */
+.hero {
+    height: 350px;
+    background-image:
+        linear-gradient(rgba(75, 25, 20, 0.55),
+        rgba(75, 25, 20, 0.55)),
+        url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    color: #ffb1c0;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ffcf54;
+    color: #63332c;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #f2ad30;
+}
+
+/* Common Section Styling */
+section {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+/* Products Section */
+.products {
+    background-color: #fff7f2;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    width: 220px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.product-card h3 {
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+.product-card p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    color: #a35d24;
+    font-size: 15px;
+}
+
+/* Custom Cake Section */
+.custom {
+    background-color: #fce3eb;
+    padding: 35px 15px;
+}
+
+.custom p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.custom h4 {
+    margin-top: 8px;
+}
+
+/* Offers Section */
+.offers {
+    background-color: #fff0c9;
+    padding: 35px 15px;
+}
+
+.offers p {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: #fff7f2;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+/* Footer */
+footer {
+    background-color: #651c23;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 3px;
+        font-size: 12px;
+    }
+
+    .hero {
+        height: 280px;
+    }
+
+    .hero-content h2 {
+        font-size: 23px;
+    }
+
+    .product-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .gallery-container img {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+}
